@@ -7,5 +7,5 @@ fun main() {
 
     println("Количество заказов: $numberOfOrders \n$thankYouMessage")
     // println("Количество сотрудников: $staff")
-    println("Количество сотрудников: ${staff - 1}")
+    println("Количество сотрудников: ${--staff}")
 }
