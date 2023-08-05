@@ -5,7 +5,8 @@ fun main() {
     var isAwningOpen = true
     var airHumidity = 20
     var currentTimeYear = "зима"
-    val conditions = (ISSUNNY == isSunny && ISAWNINGOPEN == isAwningOpen) && (AIRHUMIDITY == airHumidity && CURRENTTIMEYEAR == currentTimeYear)
+    val conditions = (ISSUNNY == isSunny && ISAWNINGOPEN == isAwningOpen) &&
+                     (AIRHUMIDITY == airHumidity && CURRENTTIMEYEAR == currentTimeYear)
 
     println("Благоприятные ли условия сейчас для роста бобовых? $conditions")
 }
