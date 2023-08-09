@@ -8,7 +8,9 @@ fun main() {
     println("Для победы введите второе число: ")
     val guessNumber2 = readln().toInt()
 
-    if (guessNumber1 == randomNumber && guessNumber2 == randomNumber2) {
+    if ((guessNumber1 == randomNumber && guessNumber2 == randomNumber2) ||
+        (randomNumber2 == randomNumber && guessNumber2 == guessNumber1))
+    {
         println("Поздравляем! Вы выиграли главный приз!")
     } else if (guessNumber1 == randomNumber || guessNumber2 == randomNumber2) {
         println("Вы выиграли утешительный приз!")
