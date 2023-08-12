@@ -2,11 +2,10 @@ package lesson_6
 
 fun main() {
     println("Введите количество секунд, которые нужно засечь: ")
-    val timer = readln().toInt()
-    var counter = timer
+    var timer = readln().toInt()
 
-    while (counter > 0) {
-        println("Осталось секунд: ${counter--}")
+    while (timer > 0) {
+        println("Осталось секунд: ${timer--}")
         Thread.sleep(1000)
     }
     println("Время вышло")
