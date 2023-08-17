@@ -5,11 +5,11 @@ fun main() {
     println("В рецепте есть базовые ингредиенты: ")
     ingridients.forEach { println(it) }
     println("- Желаете добавить еще?")
-    val addOrNo = readln()
-    if (addOrNo == "да") {
+    val userResponse = readln()
+    if (userResponse.equals("да", true)) {
         println("- Какой ингредиент вы хотите добавить?")
-        val addUserIngridients = readln()
-        ingridients.add(addUserIngridients)
+        val addUserIngredient = readln()
+        ingridients.add(addUserIngredient)
     } else {
         return
     }
