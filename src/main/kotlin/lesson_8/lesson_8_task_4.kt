@@ -1,7 +1,7 @@
 package lesson_8
 
 fun main() {
-    val ingridientsList = arrayOf("яйцо", "яблоко", "мука", "сахар", "соль")
+    val ingridientsList: Array<String> = arrayOf("яйцо", "яблоко", "мука", "сахар", "соль")
 
     println("Список ингридиентов: ")
     for (i in ingridientsList) {
@@ -14,11 +14,9 @@ fun main() {
     } else {
         println("Введите новый ингредиент:")
         val addUserIngridient = readln()
-        for (i in ingridientsList.indices) {
-            if (ingridientsList[i] == userIngridientReplace) {
-                ingridientsList[i] = addUserIngridient
-                break
-            }
+        val indexElement = ingridientsList.indexOf(userIngridientReplace)
+        if (indexElement != -1) {
+            ingridientsList[indexElement] = addUserIngridient
         }
         println("Готово! Вы сохранили следующий список:")
         for (i in ingridientsList) {
