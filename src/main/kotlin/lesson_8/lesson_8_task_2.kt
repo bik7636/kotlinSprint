@@ -6,17 +6,11 @@ fun main() {
     println("Введите название ингредиента:")
     val ingredient = readLine().toString()
 
-    var isIngredientFound = false
     for (i in ingredientList) {
         if (i == ingredient) {
-            isIngredientFound = true
-            break
+            println("Ингредиент $ingredient в рецепте есть")
+            return
         }
     }
-
-    if (isIngredientFound) {
-        println("Ингредиент $ingredient в рецепте есть")
-    } else {
-        println("Такого ингредиента в рецепте нет")
-    }
+    println("Такого ингредиента в рецепте нет")
 }
