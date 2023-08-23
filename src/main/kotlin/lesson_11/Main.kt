@@ -1,4 +1,4 @@
-package lesson_11_task_1
+package lesson_11
 
 fun main() {
     val user1 = User(1, "Alex", "qwerty", "kotlin@gmail.com")
