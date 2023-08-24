@@ -15,3 +15,7 @@ fun main() {
     println("password = ${user2.password}")
     println("email = ${user2.email}")
 }
+
+class User(val id: Int, val login: String, val password: String, val email: String) {
+
+}
