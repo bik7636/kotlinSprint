@@ -16,7 +16,7 @@ class Weather3(
     val dayTimeTemperature: Int,
     val nightTimeTemperature: Int,
     val atmosphericPressure: Int,
-    val isRain: Boolean = false
+    val isRain: Boolean = false,
 ) {
     fun showWeather() {
         println(
