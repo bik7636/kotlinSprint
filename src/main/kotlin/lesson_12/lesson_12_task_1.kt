@@ -14,8 +14,6 @@ fun main() {
     currentWeather2.isRain = false
     currentWeather2.atmosphericPressure = 679
     currentWeather2.showWeather()
-
-
 }
 
 class Weather {
@@ -30,5 +28,4 @@ class Weather {
                     " t night = $nightTimeTemperature, rain = $isRain, atmos.pressure = $atmosphericPressure"
         )
     }
-
 }
