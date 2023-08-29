@@ -27,7 +27,7 @@ class User(
     val id: Int,
     val avatar: String,
     val nikname: String,
-    status: Status
+    val status: Status
 )
 
 class Status(
