@@ -1,8 +1,8 @@
 package lesson_11
 
 fun main() {
-    val user01 = User0(1, "Alex", "qwerty", "kotlin@gmail.com")
-    val user02 = User0(2, "Dart", "Weider", "galaxy@gmail.com")
+    val user01 = User01(1, "Alex", "qwerty", "kotlin@gmail.com")
+    val user02 = User01(2, "Dart", "Weider", "galaxy@gmail.com")
     println("id = ${user01.id}")
     println("login = ${user01.login}")
     println("password = ${user01.password}")

@@ -1,7 +1,7 @@
 package lesson_11
 
 fun main() {
-    val user0 = User0(1, "Alex", "qwerty", "kotlin@gmail.com")
+    val user0 = User01(1, "Alex", "qwerty", "kotlin@gmail.com")
 
     user0.saveInfoInBio()
     user0.changePassword()
@@ -14,7 +14,7 @@ fun main() {
     user0.sendEmail("Сижу изучаю котлин, время 01:06. Балдёж да и только")
 }
 
-class User(val id: Int, val login: String, var password: String, val email: String, var bio: String = "") {
+class User01(val id: Int, val login: String, var password: String, val email: String, var bio: String = "") {
 
     fun printInfoAboutUser() {
         println("id = $id")
