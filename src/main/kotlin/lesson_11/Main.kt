@@ -1,19 +1,19 @@
 package lesson_11
 
 fun main() {
-    val user1 = User(1, "Alex", "qwerty", "kotlin@gmail.com")
-    val user2 = User(2, "Dart", "Weider", "galaxy@gmail.com")
-    println("id = ${user1.id}")
-    println("login = ${user1.login}")
-    println("password = ${user1.password}")
-    println("email = ${user1.email}")
+    val user01 = User0(1, "Alex", "qwerty", "kotlin@gmail.com")
+    val user02 = User0(2, "Dart", "Weider", "galaxy@gmail.com")
+    println("id = ${user01.id}")
+    println("login = ${user01.login}")
+    println("password = ${user01.password}")
+    println("email = ${user01.email}")
 
     println()
 
-    println("id = ${user2.id}")
-    println("login = ${user2.login}")
-    println("password = ${user2.password}")
-    println("email = ${user2.email}")
+    println("id = ${user02.id}")
+    println("login = ${user02.login}")
+    println("password = ${user02.password}")
+    println("email = ${user02.email}")
 }
 
 class User(val id: Int, val login: String, val password: String, val email: String) {
