@@ -1,11 +1,11 @@
 package lesson_12
 
 fun main() {
-    val currentWeather = Weather3(30, 22, 702)
+    val currentWeather = Weather4(30, 22, 702)
 
-    val currentWeather2 = Weather3(16, 8, 580, true)
+    val currentWeather2 = Weather4(16, 8, 580, true)
 
-    val currentWeather3 = Weather3(22, 15, 555, true)
+    val currentWeather4 = Weather4(22, 15, 555, true)
 
 }
 
