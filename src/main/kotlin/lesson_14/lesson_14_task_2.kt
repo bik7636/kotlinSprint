@@ -2,19 +2,19 @@ package lesson_14
 
 fun main() {
     val standartShip = StandartShip1("Стандарт", 60, 5)
-    standartShip.findSpeed()
-    standartShip.boxesTransportation()
+    standartShip.getSpeed()
+    standartShip.getCapacity()
     println()
 
     val icebreaker = IceBreaker("Ледокол", 20, 2)
-    icebreaker.findSpeed()
-    icebreaker.boxesTransportation()
-    icebreaker.splittingIce()
+    icebreaker.getSpeed()
+    icebreaker.getCapacity()
+    icebreaker.breakIce()
 
     println()
     val cargoShip = CargoShip("Грузовой", 40, 40, 20)
-    cargoShip.findSpeed()
-    cargoShip.boxesTransportation()
+    cargoShip.getSpeed()
+    cargoShip.getCapacity()
 }
 
 open class StandartShip1(
@@ -22,11 +22,11 @@ open class StandartShip1(
     val speed: Int,
     val capacity: Int,
 ) {
-    fun findSpeed() {
+    fun getSpeed() {
         println("Корабль $name движется со скоростью: $speed")
     }
 
-    fun boxesTransportation() {
+    fun getCapacity() {
         println("Корабль $name вмещает груз до: $capacity ящиков")
     }
 
@@ -39,8 +39,8 @@ class IceBreaker(
     splittingIce: Boolean = true,
 ) : StandartShip1(name, speed, capacity) {
 
-    fun splittingIce() {
-        println("Может колоть лёд")
+    fun breakIce() {
+        println("Корабль $name активировал уничтожение льда на своём пути")
     }
 }
 
