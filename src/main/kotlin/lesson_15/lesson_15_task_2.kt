@@ -11,7 +11,7 @@ fun main() {
     precipitationMessage.sendData()
 }
 
-abstract class BaseMessage {
+abstract class WeatherStation {
 
     abstract val data: String
     abstract fun connectToServer()
@@ -20,7 +20,7 @@ abstract class BaseMessage {
 
 }
 
-class TemperatureMessage(override val data: String) : BaseMessage() {
+class TemperatureMessage(override val data: String) : WeatherStation() {
     override fun connectToServer() {
         println("Соединение с сервером...")
     }
@@ -31,7 +31,7 @@ class TemperatureMessage(override val data: String) : BaseMessage() {
 
 }
 
-class PrecipitationMessage(override val data: String) : BaseMessage() {
+class PrecipitationMessage(override val data: String) : WeatherStation() {
     override fun connectToServer() {
         println("Соединение с сервером...")
     }
