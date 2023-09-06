@@ -14,13 +14,13 @@ fun main() {
     admin.deleteUser(user)
 }
 
-abstract class UsersForum(val username: String) {
+abstract class BaseUser(val username: String) {
     abstract fun readForum()
 
     abstract fun postMessage()
 }
 
-class Admin(username: String) : UsersForum(username) {
+class Admin(username: String) : BaseUser(username) {
 
     override fun readForum() {
         println("$username читает форум")
@@ -30,16 +30,16 @@ class Admin(username: String) : UsersForum(username) {
         println("$username отправил сообщение")
     }
 
-    fun deleteMessage(user: UsersForum) {
+    fun deleteMessage(user: BaseUser) {
         println("Сообщение пользователя ${user.username} удалено")
     }
 
-    fun deleteUser(user: UsersForum) {
+    fun deleteUser(user: BaseUser) {
         println("Пользователь ${user.username} был удалён")
     }
 }
 
-class User(username: String) : UsersForum(username) {
+class User(username: String) : BaseUser(username) {
     override fun readForum() {
         println("$username читает форум")
     }
