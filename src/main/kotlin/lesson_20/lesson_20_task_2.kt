@@ -3,8 +3,8 @@ package lesson_20
 fun main() {
     val player = Player("hero", 50, 100)
 
-    val healingPotion: (Int) -> Unit = { currentHealth ->
-        val healthAmount = player.maxHealth - currentHealth
+    val healingPotion: (Int) -> Unit = { recoveryHP ->
+        val healthAmount = player.maxHealth - recoveryHP
         player.currentHealth = player.maxHealth
         println("игрок ${player.name} восстановил $healthAmount единиц здоровья")
     }
