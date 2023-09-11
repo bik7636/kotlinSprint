@@ -10,7 +10,7 @@ fun main() {
 class Player1(val hasKey: Boolean) {
     val checkDoorStatus: () -> Unit = {
         if (hasKey) {
-            println("дверь открыта")
-        } else println("дверь закрыта")
+            println("Дверь открыта")
+        } else println("Дверь закрыта")
     }
 }
