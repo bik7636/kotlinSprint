@@ -4,7 +4,7 @@ fun main() {
     val player1 = Player1(true)
     val player2 = Player1(false)
     player1.checkDoorStatus()
-    player2.checkDoorStatus.invoke()
+    player2.checkDoorStatus()
 }
 
 class Player1(val hasKey: Boolean) {
